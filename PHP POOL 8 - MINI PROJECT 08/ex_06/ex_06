@@ -1,0 +1,15 @@
+<?php
+// session_start();
+
+
+function remove_cookie ($cookie_name) {
+    // if (isset($_COOKIE['name'])) {
+    //     unset($_COOKIE['name']); 
+        setcookie($cookie_name, "",time()-3600);
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+}
+
+remove_cookie("name");
